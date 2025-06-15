@@ -1,0 +1,21 @@
+[ {
+  "id" : 1,
+  "name" : "Aliyeva Ayten",
+  "email" : "ayten.mamed@gmail.com",
+  "password" : "Salam"
+}, {
+  "id" : 2,
+  "name" : "Memmedova Nezrin",
+  "email" : "nezrin.mamed@gmail.com",
+  "password" : "Salam1"
+}, {
+  "id" : 5,
+  "name" : "Memmedov Elvin",
+  "email" : "elvin@gmail.com",
+  "password" : "Salam1"
+}, {
+  "id" : 6,
+  "name" : "Resulzade Ayshen",
+  "email" : "ayshen@gmail.com",
+  "password" : "Salam1"
+} ]

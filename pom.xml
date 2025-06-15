@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+<!-- Maven model versiyası -->
+<modelVersion>4.0.0</modelVersion>
+
+<!-- Layihənin Group ID-si (unikal identifikasiya üçün) -->
+<groupId>org.example</groupId>
+
+<!-- Artifact ID (layihənin adı) -->
+<artifactId>ToDoList-SpringBoot</artifactId>
+
+<!-- Versiya nömrəsi -->
+<version>1.0</version>
+
+<!-- Layihənin çıxış formatı: .jar faylı -->
+<packaging>jar</packaging>
+
+<!-- Spring Boot-un parent layihəsi, build və konfiqurasiya asanlaşır -->
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.2.5</version>
+    <relativePath/> <!-- Maven parent axtarışı üçün istifadə olunur -->
+</parent>
+
+<dependencies>
+    <!-- Web tətbiqləri üçün Spring Boot Web Starter (REST API yaratmaq üçün əsas kitabxanalar) -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <!-- JSON faylları ilə işləmək üçün Jackson kitabxanası -->
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+    </dependency>
+</dependencies>
+
+<build>
+    <plugins>
+        <!-- Spring Boot tətbiqini build edib işlətmək üçün lazım olan plugin -->
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+</project>
