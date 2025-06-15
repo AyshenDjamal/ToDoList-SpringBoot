@@ -46,13 +46,6 @@ public class UserService {
     }
 
 
-    /*public User getUserByEmail(String email) {
-        return readUsersFromFile().stream()
-                .filter(user -> user.getEmail().equals(email))
-                .findFirst()
-                .orElse(null);
-    }*/
-
     public User getUserById(int id){
         return readUsersFromFile().stream()
                 .filter(user -> user.getID() == id)
@@ -60,7 +53,7 @@ public class UserService {
                 .orElse(null);
     }
 
-    public Boolean checkLogin(String email, String password){
+    public boolean checkLogin(String email, String password){
         return readUsersFromFile().stream()
                 .anyMatch(user -> user.getEmail().equals(email) && user.getPassword().equals(password));
     }
